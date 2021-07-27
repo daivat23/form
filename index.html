@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="init()">      
+    <h2>Web Form</h2>
+        <label for="Name">Name :</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="Address">Address :</label><br>
+        <input type="text" id="address" name="address"><br>
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="countries">Choose a countries:</label>
+        <select name="countries" id="countries">
+            <option value="india">India</option>
+            <option value="america">America</option>
+            <option value="itly">Itly</option>
+        </select><br>
+        <label for="gendar">Choose a gendar:</label>
+        <select name="gendar" id="gendar">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+        <label for="hobby">Choose a Hobby:</label>
+        <select name="hobby" id="hobby">
+           
+            <option value="sports">sports</option>
+            <option value="reading">reading</option>
+            <option value="cooking">cooking</option>
+            <option value="traveling">traveling</option>
+        </select><br>
+        <button id="save" onclick=" onRegisterPressed()">Submit</button>
+        <button type="reset" onclick="onClar()">Reset</button>
+    
+    <h2>Form Info</h2>
+    <table id="regtable">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Countries</th>
+            <th>Gendar</th>
+            <th>Hobby</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="tablerows">
+
+    </tbody>
+    </table>
+    <script src="data.js"></script>
+</body>
+</html>
